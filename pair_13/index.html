@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Клуб подій</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Клуб подій</h1>
+    <p>Керуйте заявками на участь у шкільних активностях</p>
+</header>
+<main class="app">
+    <section class="block form-block">
+        <h2>Нова заявка</h2>
+        <label for="nameInput">Ім'я учасника</label>
+        <input id="nameInput" type="text" placeholder="Введіть ім'я та прізвище">
+
+        <label for="eventInput">Назва події</label>
+        <input id="eventInput" type="text" placeholder="На яку подію реєструєтесь?">
+
+        <p id="error" class="error hidden">Заповніть обидва поля!</p>
+        <button id="addButton" type="button">+ Додати заявку</button>
+    </section>
+
+    <section class="block list-block">
+        <h2>Учасники</h2>
+        <div class="stats">
+            <div class="stat">
+                <p>Усього заявок</p>
+                <strong id="totalCounter">0</strong>
+            </div>
+            <div class="stat">
+                <p>Підтверджено</p>
+                <strong id="confirmedCounter">0</strong>
+            </div>
+        </div>
+        <p id="emptyText">Заявок поки немає</p>
+        <ul id="requestList"></ul>
+        <button id="clearButton" type="button" class="clear-btn">Очистити всі заявки</button>
+    </section>
+</main>
+<div class="spacer"></div>
+<script src="script.js"></script>
+</body>
+</html>
