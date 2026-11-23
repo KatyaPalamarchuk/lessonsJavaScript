@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="page">
+    <header class="hero">
+        <p class="eyebrow">ТЕХНОЛОГІЇ &bull; ВЕБ &bull; ДИЗАЙН</p>
+        <h1>Code Daily</h1>
+        <p class="subtitle">Новини, що з'являються на сторінці завдяки JavaScript.</p>
+    </header>
+
+    <div class="toolbar">
+        <p class="counter">Знайдено новин: <strong id="news-count">0</strong></p>
+        <div class="filters" aria-label="Фільтр новин">
+            <button id="show-all" class="filter-btn active" type="button">Усі</button>
+            <button id="show-js" class="filter-btn" type="button">JavaScript</button>
+            <button id="show-design" class="filter-btn" type="button">Дизайн</button>
+        </div>
+    </div>
+
+    <section id="news-list" class="news-grid" aria-label="Стрічка новин"></section>
+</main>
+
+
+<script src="script.js"></script>
+</body>
